@@ -3,7 +3,7 @@ pipeline {
 
     stages {
 
-        stage("print the folder names") {
+        stage("print the files") {
             steps {
                 sh "ls"
             }
