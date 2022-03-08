@@ -11,7 +11,7 @@ pipeline {
 
         stage("Delete the folder") {
             steps {
-               sh "rm -rf /var/lib/jenkins/workspace/pipeline_first"
+               sh "rm -rf pipeline_first"
             }
         }
 
