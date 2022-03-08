@@ -3,12 +3,28 @@ pipeline {
 
     stages {
 
+        stage("print the LL") {
+            steps {
+                sh "ll"
+            }
+
+
+        }
+
+
         stage("Delete the folder") {
             steps {
                sh "rm -rf pipeline_first"
             }
         }
          
+         stage("print the LL") {
+            steps {
+                sh "ll"
+            }
+
+
+        }
         stage("checkout the code") {
             steps {
                checkout scm
