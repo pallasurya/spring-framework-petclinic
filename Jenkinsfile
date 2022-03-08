@@ -3,9 +3,9 @@ pipeline {
 
     stages {
 
-        stage("print the LL") {
+        stage("print the folder names") {
             steps {
-                sh "ll"
+                sh "ls"
             }
 
 
@@ -18,9 +18,9 @@ pipeline {
             }
         }
          
-         stage("print the LL") {
+         stage("print the folder names") {
             steps {
-                sh "ll"
+                sh "ls"
             }
 
 
