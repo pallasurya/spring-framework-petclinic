@@ -22,7 +22,7 @@ pipeline {
 
         }
 
-        stage("build the code") {
+        stage("print the PWD") {
             steps {
                 sh "pwd"
             }
