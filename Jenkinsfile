@@ -5,7 +5,7 @@ pipeline {
 
         stage("print the files") {
             steps {
-                sh "ll"
+                sh "pwd"
             }
 
 
@@ -20,7 +20,7 @@ pipeline {
          
          stage("print the folder names") {
             steps {
-                sh "ll"
+                sh "pwd"
             }
 
 
