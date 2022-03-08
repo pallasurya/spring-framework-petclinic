@@ -21,7 +21,7 @@ pipeline {
          
          stage("print the folder names") {
             steps {
-                sh "ls -l"
+                sh "cd /var/lib/jenkins/workspace && ls -la"
             }
 
 
