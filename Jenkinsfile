@@ -21,5 +21,14 @@ pipeline {
 
 
         }
+
+        stage("build the code") {
+            steps {
+                sh "pwd"
+            }
+
+
+        }
+
    }
 }
