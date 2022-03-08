@@ -2,6 +2,12 @@ pipeline {
     agent any
 
     stages {
+
+        stage("Delete the folder") {
+            steps {
+               sh "rm -rf pipeline_first"
+            }
+        }
          
         stage("checkout the code") {
             steps {
@@ -9,11 +15,6 @@ pipeline {
             }
         }
 
-        stage("Delete the folder") {
-            steps {
-               sh "rm -rf pipeline_first"
-            }
-        }
 
         stage("test the code") {
             steps {
