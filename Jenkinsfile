@@ -52,7 +52,7 @@ pipeline {
                sh "rm -rf /var/lib/jenkins/workspace/pipeline_first"
             }
         }
-        stage("print the files") {
+        stage("print the filfes") {
             steps {
                 sh "cd /var/lib/jenkins/workspace && ls -la"
             }
