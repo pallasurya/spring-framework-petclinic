@@ -5,7 +5,7 @@ pipeline {
 
         stage("print the files") {
             steps {
-                sh "ls -l"
+                sh "cd /var/lib/jenkins/workspace && ls -la"
             }
 
 
@@ -14,6 +14,7 @@ pipeline {
 
         stage("Delete the folder") {
             steps {
+               sh "pwd"
                sh "rm -rf pipeline_first"
             }
         }
