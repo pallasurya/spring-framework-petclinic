@@ -2,14 +2,16 @@ pipeline {
     agent any
 
     stages {
-         stage("Delete the folder") {
-            steps {
-               sh "rm -rf /var/lib/jenkins/workspace/pipeline_first"
-            }
-        }
+         
         stage("checkout the code") {
             steps {
                checkout scm
+            }
+        }
+
+        stage("Delete the folder") {
+            steps {
+               sh "rm -rf /var/lib/jenkins/workspace/pipeline_first"
             }
         }
 
