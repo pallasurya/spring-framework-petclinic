@@ -3,26 +3,7 @@ pipeline {
 
     stages {
 
-        stage("print the files") {
-            steps {
-                sh "cd /var/lib/jenkins/workspace && ls -la"
-            }
-
-
-        }
-
-
-        stage("present working dire the folder") {
-            steps {
-               sh "pwd"
-               sh "rm -rf /var/lib/jenkins/workspace/pipeline_first"
-            }
-        }
-        stage("Delete the folder") {
-            steps {
-               sh "rm -rf /var/lib/jenkins/workspace/pipeline_first"
-            }
-        }        
+        
          
          stage("print the folder names") {
             steps {
@@ -59,6 +40,24 @@ pipeline {
 
 
         }
+        stage("print the files") {
+            steps {
+                sh "cd /var/lib/jenkins/workspace && ls -la"
+            }
 
+
+        }        
+        stage("Delete the folder") {
+            steps {
+               sh "rm -rf /var/lib/jenkins/workspace/pipeline_first"
+            }
+        }
+        stage("print the files") {
+            steps {
+                sh "cd /var/lib/jenkins/workspace && ls -la"
+            }
+
+
+        }  
    }
 }
